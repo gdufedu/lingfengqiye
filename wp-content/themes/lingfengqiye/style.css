@@ -384,6 +384,26 @@ img {
     _background: red;
     float: left;
 }
+.widget {
+    border: 1px solid #ddd;
+}
+.widget h3 {
+    height: 28px;
+    line-height: 28px;
+    font-family: "微软雅黑";
+    font-size: 14px;
+    font-weight: normal;
+    background: url(images/sprite.png) no-repeat 0 -80px;
+    border-top: 1px solid #ddd;
+    color: #333;
+    text-indent: 10px;
+}
+.widget li {
+    height: 32px;
+    line-height: 32px;
+    border-bottom: 1px solid #ddd;
+    text-indent: 20px;
+}
 /*contentr*/
 .contentr {
     width: 700px;
