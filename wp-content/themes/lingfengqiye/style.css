@@ -380,12 +380,14 @@ img {
 /* .sidebar */
 .sidebar {
     width: 230px;
-    height: 600px;
+    _height: 600px;
     _background: red;
     float: left;
 }
 .widget {
     border: 1px solid #ddd;
+    padding-bottom: 2px;
+    margin-bottom: 10px;
 }
 .widget h3 {
     height: 28px;
@@ -397,6 +399,7 @@ img {
     border-top: 1px solid #ddd;
     color: #333;
     text-indent: 10px;
+    border-bottom: 1px solid #ddd;
 }
 .widget li {
     height: 32px;
@@ -404,16 +407,27 @@ img {
     border-bottom: 1px solid #ddd;
     text-indent: 20px;
 }
-/*contentr*/
-.contentr {
-    width: 700px;
-    height: 600px;
-    background: green;
-    float: right;
-    padding-left: 14px;
-    border-left: 1px solid #ddd;
+.widget li a,
+.widget_nav_menu li a {
+    display: block;
+    height: 32px;
+    line-height: 32px;
+    background: url(images/icon.gif) no-repeat 10px -224px;
 }
-/*content*/
+.widget_nav_menu li a:hover,
+.widget_nav_menu li.current-cat a,
+.widget_nav_menu li.current_page_item a {
+    background: url(images/icon.gif) no-repeat 10px -299px;
+    font-weight: bold;
+    color: #0057B7;
+    text-decoration: none;
+}
+.textwidget {
+    color: #666;
+    line-height: 200%;
+    padding: 10px 10px 6px 10px;
+}
+/*index-content*/
 .content {
 }
 .module {
@@ -532,6 +546,158 @@ img {
     background: url(images/icon.gif) no-repeat 0 12px;
     text-indent: 14px;
     overflow: hidden;
+}
+/*cat-contentr*/
+.contentr {
+    width: 700px;
+    min-height: 570px;
+    float: right;
+    padding-left: 14px;
+    border-left: 1px solid #ddd;
+}
+.mianbaoxie {
+    color: #888;
+    border-bottom: 1px solid #ddd;
+    height: 28px;
+    line-height: 28px;
+}
+.mianbaoxie .breadcrumbs{
+    display: inline;
+}
+.mianbaoxie .breadcrumbs a {
+    color: #888;
+}
+/*cat postlist*/
+.imgmode {
+    margin-top: 10px;
+}
+.imgmode li {
+    float: left;
+    width: 168px;
+    height: 165px;
+    margin-top: 10px;
+}
+.imgmode li img {
+    border: 1px solid #ddd;
+    padding: 1px 2px;
+}
+.imgmode li h3 {
+    font-weight: normal;
+    font-size: 13px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-align: center;
+    width: 156px;
+    margin-top: 10px;
+}
+.imgmode li a:hover img {
+    border: 1px solid #999;
+}
+.listmode {
+    margin-top: 20px;
+}
+.listmode li {
+    height: 30px;
+    line-height: 30px;
+    background: url(images/icon.gif) no-repeat 0 15px;
+    text-indent: 14px;
+    overflow: hidden;
+}
+.listmode li span {
+    float: right;
+    color: #666;
+}
+.fenye{width:98%;height:36px;padding-top: 15px;margin-bottom:20px;text-align:center;line-height:36px;border-top: 1px solid #E8E8E8;}
+.fenye a{padding:4px 6px 4px 6px;margin:0 2px 0 2px;border:1px solid #aaa;text-decoration:none;color:#333;}
+.fenye a.current{   background:#0071AD;color:#fff;}
+.fenye a:hover{background:#0071AD;color:#fff;}
+/*page-contentr*/
+.postlist h1 {
+    font-size: 24px;
+    text-align: center;
+    font-weight: normal;
+    font-family: '微软雅黑';
+    margin: 30px 0 5px 0;
+}
+.postlist .xuxian {
+    height: 1px;
+    background: url(images/dotline.gif) repeat-x 0;
+    margin: 0 10px 10px 10px;
+}
+.postmeta {
+    color: #999;
+    text-align: center;
+}
+.postmeta span {
+    margin: 0 10px;
+}
+.postmeta span a {
+    color: #999;
+}
+.postcontent {
+    padding: 20px 10px 10px 10px;
+    line-height: 200%;
+    font-size: 14px;
+    color: #333;
+}
+.postcontent p {
+    margin:24px 0;
+}
+.postcontent img {
+    text-align: center;
+}
+/*404*/
+.bread {
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    line-height: 22px;
+    color: #999;
+    font-family: Verdana;
+    border-bottom: 1px solid #E7E7E7;
+}
+.breadcrumbs {
+    display: inline;
+}
+.breadcrumbs a {
+    color: #999;
+}
+.errorinfo {
+    padding: 60px 0 20px 250px;
+}
+.errorinfo h4 {
+    height: 32px;
+    line-height: 32px;
+    font-size: 28px;
+    text-indent: -9999px;
+    background: url(images/404.gif) no-repeat 0 0;
+}
+.errorinfo span {
+    margin-bottom: 25px;
+    display: block;
+}
+strong, b {
+    font-weight: bold;
+}
+.errorinfo ol {
+    padding: 0 20px;
+}
+.errorinfo ol li {
+    margin: 8px 0;
+    list-style: decimal;
+}
+.errorinfo .topsearch {
+    margin-top: 20px;
+    position: relative;
+    left: -20px;
+}
+.errorinfo .topsearch #s {
+    width: 230px;
+    height: 20px;
+    line-height: 20px;
+}
+.errorinfo .topsearch #searchsubmit {
+    height: 20px;
+    line-height: 20px;
 }
 /*footer*/
 .footer {
